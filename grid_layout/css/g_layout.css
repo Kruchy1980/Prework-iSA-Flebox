@@ -1,0 +1,14 @@
+/* Whole body*/
+body {
+    background-color: rgb(220, 217, 223);
+}
+/* Title */
+h1 {
+    text-align: center;
+    border: 1px solid rgb(185, 184, 184);
+    background: rgb(228, 226, 226);
+    border-radius: 20px;
+    height: 40px;
+    width: 600px;
+    margin:0 auto;
+}
