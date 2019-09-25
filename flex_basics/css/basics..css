@@ -1,0 +1,247 @@
+/* Main body style */
+body {
+    background-color: rgb(151, 245, 214);
+    width: 80%;
+    margin: auto;
+}
+
+/* Header styling */
+#header {
+    background-color: rgb(192, 181, 181);
+    border: 1px solid rgb(148, 146, 146);
+    text-align: center;
+    border-radius: 30px;
+    height: 60px;
+    width: 80%;
+    margin: 5px auto;
+}
+/* H1 style*/
+#header h1 {
+    text-decoration: underline;
+    text-decoration-style: double;
+    margin: 5px 0 0 0;
+}
+/* Paragraph in header style */
+#header p{
+    font-size: 0.7em;
+    margin: 0;
+}
+/* Navbar */
+nav {
+    height: 40px;
+    background-color: rgb(79, 79, 219);
+    border: 1px solid rgb(46, 46, 192);
+    border-radius: 20px;
+    padding: 0;
+    position: fixed;
+    top: 80px;
+    left: 243px;
+    z-index: 1;
+}
+nav ul {
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    border: 1px solid burlywood;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin: 10px 20px;
+}
+nav a {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: burlywood;
+}
+nav a:hover {
+    color: firebrick;
+    background-color: burlywood;
+}
+/* Main content style */
+#main-content {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+/* Wrapper style */
+.wrapper {
+    width: 100%;
+    max-width: 1000px; /* Is set for max screen width */
+}
+.wrapper h2 {
+    width: 300px;
+    text-align: center;
+    background-color: rgb(199, 198, 198);
+    border-bottom: 1px solid rgb(150, 148, 148);
+    margin: 20px auto;
+    display: block;
+}
+.wrapper small {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+/* Flex container style */
+#flex-container, .flex-grow {
+   display: flex; /* Everything in this container works as flex style elements so as we can see the elements are small boxes at present */
+   background-color: #fff;
+}
+
+/* Boxes style -a all*/
+.box {
+    height: 100px;
+    min-width: 100px; /* The minimum width the box will shrink */
+    float: left;
+}
+/* Separate boxes style */
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: green;
+}
+
+.three {
+    background-color: blue;
+}
+/* Flex grow - makes the boxes increasing their width */
+#flex-grow {
+    display: flex; /* Everything in this container works as flex style elements so as we can see the elements are small boxes at present */
+    background-color: #fff;
+}
+.box1 {
+    height: 100px;
+    width: 100px;
+  /*  flex-grow: 100; /* Sets the flex grow factor, can not be negative */
+}
+/* Separate boxes style */
+/* As we will notice we cn set the flexboxes width like fractions in grids - which will be showed in another Repository Prework-iSA-Grid Grid */
+.four {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.five {
+    background-color: green;
+    flex-grow: 2;
+}
+
+.six {
+    background-color: blue;
+    flex-grow: 3;
+}
+/* Flex Shrink*/
+/* Flex shrink -  flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, items shrink to fit according to flex-shrink. */
+/* Felx-shrink depends of width of web browser window or device it is displayed */
+/* If there is larger number in shrink attribite the smaller the box is. */
+#flex-shrink {
+    display: flex; /* Everything in this container works as flex style elements so as we can see the elements are small boxes at present */
+    background-color: #fff;
+}
+.box2 {
+    height: 100px;
+    width: 320px;
+}
+/* Separate boxes style */
+/* As we will notice we cn set the flexboxes width like fractions in grids - which will be showed in another Repository Prework-iSA-Grid Grid */
+.seventh {
+    background-color: red;/*  flex-grow: 100; /* Sets the flex grow factor, can not be negative */
+    flex-shrink: 1;
+}
+
+.eight {
+    background-color: green;
+    flex-shrink: 2;
+}
+
+.ninth {
+    background-color: blue;
+    flex-shrink: 3;
+}
+/* Flex wrap -  The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
+#flex-wrap {
+    display: flex; /* Everything in this container works as flex style elements so as we can see the elements are small boxes at present */
+    background-color: #fff;
+}
+.box3 {
+    height: 100px;
+    width: 333px;
+    flex-wrap: wrap; /* Wraps the element one below second */
+    /* flex-wrap: nowrap; /* The elements are not wrapped */
+    /* flex-wrap: wrap-reverse; /* Elements are wrapped in opposite direction */
+}
+/* Separate boxes style */
+/* As we will notice we cn set the flexboxes width like fractions in grids - which will be showed in another Repository Prework-iSA-Grid Grid */
+.tenth {
+    background-color: red;
+}
+
+.eleventh {
+    background-color: green;
+}
+
+.twelfth {
+    background-color: blue;
+}
+/* Flex basis - flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing. */
+#flex-basis {
+    display: flex; /* Everything in this container works as flex style elements so as we can see the elements are small boxes at present */
+    background-color: #fff;
+}
+.box4 {
+    height: 100px;
+    /* flex-basis: 200px; */
+}
+/* Separate boxes style */
+/* As we will notice we cn set the flexboxes width like fractions in grids - which will be showed in another Repository Prework-iSA-Grid Grid */
+.thirteenth {
+    background-color: red;
+    flex-basis: 100px;
+}
+
+.fourteenth {
+    background-color: green;
+    flex-basis: 200px;
+}
+
+.fiveteenth {
+    background-color: blue;
+    flex-basis: 300px;
+}
+/* Some more informations about flex */
+/* Keyword values */
+/* flex: auto;
+flex: initial;
+flex: none; */
+
+/* One value, unitless number: flex-grow */
+/* flex: 2; */
+
+/* One value, width/height: flex-basis */
+/* flex: 10em;
+flex: 30%;flex: auto;
+flex: initial;
+flex: none;
+flex: min-content; */
+
+/* Two values: flex-grow | flex-basis */
+/* flex: 1 30px; */
+
+/* Two values: flex-grow | flex-shrink */
+/* flex: 2 2; */
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+/* flex: 2 2 10%; */
+
+/* Global values */
+/* flex: inherit;
+flex: initial;
+flex: unset; */
