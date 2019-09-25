@@ -1,0 +1,31 @@
+/* Whole body*/
+body {
+    background-color: rgb(220, 217, 223);
+}
+/* Title */
+h1 {
+    border: 1px solid rgb(185, 184, 184);
+    background: rgb(228, 226, 226);
+    border-radius: 20px;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    margin: 5px auto;
+}
+/* Main content of the repo part */
+#blocks {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+#blocks div {
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ccc;
+    border: 5px groove greenyellow;
+}
+.one{order: 3;}
+.two{order: -1;}
+.three{order: 2;}
+.four{order: 0;}

@@ -1,0 +1,124 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+/* Whole body*/
+body {
+    background-color: rgb(220, 217, 223);
+}
+/* Title */
+h1 {
+    border: 1px solid rgb(185, 184, 184);
+    background: rgb(228, 226, 226);
+    border-radius: 20px;
+    height: 40px;
+    width: 600px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+
+
+
+/* Main content style */
+#main-content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Menu base style */
+nav {
+    background: #333;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+/* Socjal menu base styles */
+a.tw {
+    background: url("../img/tweet.jpg") no-repeat center;
+    background-size: 80%;
+}
+a.fb {
+    background: url("../img/facebook.jpg") no-repeat center;
+    background-size: 80%;
+}
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+    margin: 3px auto;
+}
+
+/* Here is part responsible for present part of repository */
+/* grid vs flex base styles */
+ #blocks {
+    margin: 20px;
+ }
+
+article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+article h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* The older one part  again*/
+/* Flex styles - the styles responsible for nav menu for smaller screens*/
+nav ul.social {
+    flex: 1 1 0;
+    display: flex;
+}
+nav ul.social li {
+    flex: 1 1 0;
+}
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav li {
+        flex: 1 1 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .social {
+        margin: 0;
+    }
+    ul.social {
+        margin: 0;
+    }
+    #blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    article {
+        flex: 0 1 32%;
+        transition: flex-basis 0.2s linear;
+    }
+    article.stack {
+        flex: 0 1 100%;
+    }
+}

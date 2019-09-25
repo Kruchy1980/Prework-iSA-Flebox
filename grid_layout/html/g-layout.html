@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jakub Kruszyński"> 
+    <title>Grid/Layout</title>
+    <link rel="stylesheet" href="../css/g_layout.css">
+    <!-- Here we are using jQuery as well so need to connect it s it is below. -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Grid layouts</h1> <hr>
+    <div id="main-content">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href="#" class="fb">Facebook</a></li>
+                <li><a href="#" class="tw">Twitter</a></li>
+            </ul>
+        </nav>
+
+        <div style="margin: 20px;">
+            <span>Layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
+
+        <section id="blocks">
+            <article>
+                <h2>Something not really important</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem iste illo. Ipsam voluptates quod quae vitae cupiditate, enim non eos. Cupiditate sequi ab, sit aliquam sint commodi praesentium reprehenderit!</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article> 
+            <hr>
+        </div>
+    </div>   
+    <script>
+        $("a.stack").on("click", function() {
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function() {
+            $("article").removeClass("stack");
+        });
+    </script> 
+</body>
+</html>
