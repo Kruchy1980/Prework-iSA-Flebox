@@ -29,6 +29,12 @@
             </ul>
         </nav>
 
+        <div style="margin: 20px;">
+            <span>Layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
+
         <section id="blocks">
             <article>
                 <h2>Something not really important</h2>
@@ -54,7 +60,21 @@
                 <h2>Something else with not important content</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
             </article>
+            <hr>
+            <article>
+                <h2>Something else with not important content</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam possimus saepe odit ad necessitatibus quod commodi minus temporibus mollitia, voluptates voluptatem, magnam, illum soluta explicabo minima praesentium dignissimos eveniet?</p>
+            </article> 
+            <hr>
         </div>
-    </div>    
+    </div>   
+    <script>
+        $("a.stack").on("click", function() {
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function() {
+            $("article").removeClass("stack");
+        });
+    </script> 
 </body>
 </html>
